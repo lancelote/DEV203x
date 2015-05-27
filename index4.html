@@ -1,0 +1,76 @@
+<!-- Tabs and scrollspy-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Tabs -->
+                <h3>Tabs</h3>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="active"><a href="#first" role="tab" data-toggle="tab">First</a></li>
+                    <li><a href="#second" role="tab" data-toggle="tab">Second</a></li>
+                    <li><a href="#third" role="tab" data-toggle="tab">Third</a></li>
+                </ul>
+
+                <!-- Tab content -->
+                <div class="tab-content">
+                    <div class="active tab-pane fade in" id="first">
+                        <h2>First</h2>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero elit, maximus sit amet vestibulum eu, porttitor id leo. Proin feugiat mi nec nibh ultrices, a maximus lorem interdum. Maecenas eu maximus metus, non ullamcorper purus. Etiam quis consectetur libero. Proin libero nibh, pretium a ipsum quis, vulputate mattis lorem. Sed eget placerat risus. Vivamus iaculis sem rhoncus ligula vehicula mattis. Aliquam rhoncus aliquet lobortis.</div>
+                    </div>
+                    <div class="tab-pane fade" id="second">
+                        <h2>Second</h2>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero elit, maximus sit amet vestibulum eu, porttitor id leo. Proin feugiat mi nec nibh ultrices, a maximus lorem interdum. Maecenas eu maximus metus, non ullamcorper purus. Etiam quis consectetur libero. Proin libero nibh, pretium a ipsum quis, vulputate mattis lorem. Sed eget placerat risus. Vivamus iaculis sem rhoncus ligula vehicula mattis. Aliquam rhoncus aliquet lobortis.</div>
+                    </div>
+                    <dic class="tab-pane fade" id="third">
+                        <h2>Third</h2>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero elit, maximus sit amet vestibulum eu, porttitor id leo. Proin feugiat mi nec nibh ultrices, a maximus lorem interdum. Maecenas eu maximus metus, non ullamcorper purus. Etiam quis consectetur libero. Proin libero nibh, pretium a ipsum quis, vulputate mattis lorem. Sed eget placerat risus. Vivamus iaculis sem rhoncus ligula vehicula mattis. Aliquam rhoncus aliquet lobortis.</div>
+                    </dic>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h2>Scrollspy</h2>
+                <div style="position: relative">
+                    <!-- Navigation -->
+                    <nav class="navbar navbar-default navbar-static" role="navigation" id="navbar-spy">
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="activate"><a href="#scroll-first">First</a></li>
+                                <li><a href="#scroll-second">Second</a></li>
+                                <li><a href="#scroll-third">Third</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <!-- Content -->
+                    <div data-target="#navbar-spy" data-spy="scroll" style="height: 150px; overflow-y: scroll; position: relative">
+                        <div id="scroll-first">
+                            <h2>First</h2>
+                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero elit, maximus sit amet vestibulum eu, porttitor id leo. Proin feugiat mi nec nibh ultrices, a maximus lorem interdum. Maecenas eu maximus metus, non ullamcorper purus. Etiam quis consectetur libero. Proin libero nibh, pretium a ipsum quis, vulputate mattis lorem. Sed eget placerat risus. Vivamus iaculis sem rhoncus ligula vehicula mattis. Aliquam rhoncus aliquet lobortis.</div>
+                        </div>
+                        <div id="scroll-second">
+                            <h2>Second</h2>
+                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero elit, maximus sit amet vestibulum eu, porttitor id leo. Proin feugiat mi nec nibh ultrices, a maximus lorem interdum. Maecenas eu maximus metus, non ullamcorper purus. Etiam quis consectetur libero. Proin libero nibh, pretium a ipsum quis, vulputate mattis lorem. Sed eget placerat risus. Vivamus iaculis sem rhoncus ligula vehicula mattis. Aliquam rhoncus aliquet lobortis.</div>
+                        </div>
+                        <div id="scroll-third">
+                            <h2>Third</h2>
+                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero elit, maximus sit amet vestibulum eu, porttitor id leo. Proin feugiat mi nec nibh ultrices, a maximus lorem interdum. Maecenas eu maximus metus, non ullamcorper purus. Etiam quis consectetur libero. Proin libero nibh, pretium a ipsum quis, vulputate mattis lorem. Sed eget placerat risus. Vivamus iaculis sem rhoncus ligula vehicula mattis. Aliquam rhoncus aliquet lobortis.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-2.1.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
